@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        body{
+            margin:0px;padding: 0px;
+            text-transform: capitalize;
+            background-color: black;
+            color: white;
+            display: none;
+        }
+        #divTime{
+            border:2px solid #fff;
+            margin:250px auto;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bolder;
+            width:25%;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div id='changeMood'>
+        <i class="fa fa-sun-o" aria-hidden="true"></i>
+        <i class="fa fa-moon-o" aria-hidden="true"></i>
+    </div>
+    <div id='divTime'></div>
+    <script src='jQuery v1.12.4.js'></script>
+    <script>
+        $('document').ready(function(){
+        
+        $("body").css('background','black').delay(1000).fadeIn(2000);  
+          
+        function myTime(){
+            let date=new Date();
+            let h=date.getHours();
+            let m=date.getMinutes();
+            let s=date.getSeconds();
+            
+            
+
+            if(h == 0){
+                h=12;
+            }
+            if(h>=12){
+                session='PM';
+                
+            }
+            if(h<10){
+                h="0"+h;
+                
+            }
+            if(m<10 ){
+                m="0"+m;
+            }
+            if(s<10 ){
+                s="0"+s;
+            }
+          
+            
+            let time=h+' : '+m+' : '+s+" ";
+
+           
+            document.getElementById('divTime').innerText=time;
+           
+        }
+        setInterval(myTime,1000)
+
+        })
+
+    </script>
+</body>
+</html>
