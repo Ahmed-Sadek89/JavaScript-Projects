@@ -1,0 +1,55 @@
+.parent{
+    background-color: turquoise;
+    overflow: hidden;
+    width: 400px;
+    position: absolute;
+    right: 15px;
+    bottom:10px;
+    border-radius: 20px 20px 0px 0px;
+    height: auto;
+}
+
+
+.parent .child1{
+    display: grid;
+    grid-template-rows: repeat(2,100%);
+    
+    padding:20px 10px 25px 10px;
+    background-color: #3e9b92;
+    text-align: end;
+    overflow: hidden;
+
+}
+.parent .child1 .current-value{
+   font-size: 40px;
+   padding-top: 10px;
+    color: #f0f0f0;
+    word-break: break-all;
+}
+.parent .child2{
+    display: grid;
+    grid-template-columns: 200px 100px 100px
+}
+.parent .child3{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+}
+.parent .child4{
+    display: grid;
+    grid-template-columns: 100px 100px 200px
+}
+
+.parent  button{
+    border: none;
+    margin: 7px;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5 ease;
+    font-weight: 100;
+    font-size: 20px;
+}
+.parent button:hover{
+    background: rgba(0,0,0,0.7);
+    color: rgba(255,255,255,0.7);
+}
