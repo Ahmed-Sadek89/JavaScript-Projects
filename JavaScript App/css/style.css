@@ -1,0 +1,100 @@
+body {
+  background-color: #444480; }
+  body .container {
+    background-color: white;
+    width: 60%;
+    margin: 150px auto;
+    text-transform: capitalize;
+    overflow: hidden; }
+    body .container header {
+      background-color: #ddd;
+      margin-bottom: 20px;
+      padding: 20px;
+      text-align: left;
+      font-size: 20px;
+      font-weight: bold; }
+    body .container #success-created {
+      background-color: #3bc33b;
+      color: #fff;
+      margin: 10px 20px;
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+      border-radius: 10px;
+      display: none; }
+    body .container #failed-created {
+      background-color: red;
+      border-radius: 10px;
+      color: #fff;
+      margin: 10px 20px;
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+      display: none; }
+    body .container form {
+      padding: 20px 30px;
+      color: #000; }
+      body .container form .form-control {
+        display: grid;
+        line-height: 2;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(2, 50%);
+        grid-template-areas: 'label label label input input input input input input' '. . . small small small small small small'; }
+        body .container form .form-control label {
+          grid-area: label; }
+          body .container form .form-control label:after {
+            content: " :"; }
+        body .container form .form-control input {
+          grid-area: input;
+          border-radius: 10px;
+          border: 2px solid #ddd;
+          padding: 5px 10px; }
+        body .container form .form-control .invalid-input {
+          border: 2px solid #f04646; }
+        body .container form .form-control .valid-input {
+          border: 2px solid #01ff01; }
+        body .container form .form-control small {
+          grid-area: small;
+          margin: 20px 0px;
+          margin-top: 10px;
+          color: red;
+          text-align: center; }
+        body .container form .form-control button {
+          width: 330px;
+          background-color: #444480;
+          border: none;
+          color: #fff;
+          padding: 20px 0;
+          font-size: 20px;
+          border-radius: 10px;
+          cursor: pointer;
+          text-transform: capitalize;
+          letter-spacing: 1px; }
+    body .container .data-created {
+      padding: 10px 5px;
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      grid-template-rows: repeat(2, 100%);
+      grid-template-areas: 'table table table table table table table table table';
+      text-align: center; }
+    body .container table {
+      grid-area: table;
+      line-height: 2;
+      border: 2px solid #444480;
+      padding: 20px 0;
+      border-radius: 5px; }
+      body .container table thead {
+        font-size: 20px; }
+      body .container table tbody button {
+        width: 100px;
+        background-color: #fb2424;
+        border: none;
+        color: #fff;
+        padding: 10px 0;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-transform: capitalize;
+        letter-spacing: 1px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            create a user
+        </header>
+        <div id="success-created">
+            created success
+        </div>
+        <div id="failed-created">
+            created failed
+        </div>
+        <form id="form">
+
+            <div class="form-control">
+                <label for="username">username</label>
+                <input type="text" id='username'>
+                <small></small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">email</label>
+                <input type="text" id='email'>
+                <small></small>
+            </div>
+        
+            <div class="form-control">
+                <label for="password">password</label>
+                <input type="password" id='password'>
+                <small></small> 
+            </div>
+
+            <div class="form-control">
+                <label for="confirm-password">confirm password</label>
+                <input type="password" id='confirm_password'>
+                <small></small>
+            </div>
+
+            <div class="form-control">
+                <button type="submit" id='create'>create</button>
+            </div>
+            
+        </form>
+
+        <div class="data-created">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>email</th>
+                        <th>password</th>
+                        <th>action</th>
+                </thead>
+                <tbody id='row-data'>
+                    
+                </tbody>
+            </table>
+        </div>
+    
+        
+    </div>
+    
+
+    <script src='script.js'></script>
+</body>
+</html>
